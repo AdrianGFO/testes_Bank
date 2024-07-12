@@ -3,20 +3,19 @@ import java.util.Scanner;
 
 public class testar {
     public static void main(String[] args) {
-        String firstAsk;
-        Scanner scan = new Scanner(System.in);
+int result;
+String pergunta;
 
-        System.out.println("Digite");
+Scanner sc = new Scanner(System.in);
+        System.out.println("Digite algo maiusculo");
+        pergunta = sc.next().toLowerCase();
 
-        firstAsk = scan.next().charAt(0) + "";
-
-        // System.out.println("____" + firstAsk + "____");
-        if(firstAsk.equals("y") || firstAsk.equals("Y")){
-            System.out.println("deu bom!");
+        if(pergunta.equals("y")){
+            System.out.println("deu certo" + pergunta);
         }else{
-            System.out.println("não deu bom!");
+            System.out.println("deu errado" + pergunta);
         }
-
-        scan.close();
+        //System.out.println(result);
+    sc.close();
     }
 }

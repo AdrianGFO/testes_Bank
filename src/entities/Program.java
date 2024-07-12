@@ -15,6 +15,8 @@ public class Program {
         this.name = name;
     }
 
+    public Program(){}
+
     public int getAccountNumber() {
         return this.accountNumber;
     }
@@ -31,8 +33,13 @@ public class Program {
         this.name = name;
     }
 
-    public void Deposit(int depositAmount){
+    public void Deposit(double depositAmount){
     balance += depositAmount;
+    }
+
+    public void Withdraw(double WithdrawAmount){
+        balance -= WithdrawAmount;
+        balance -= 5;
     }
 
     public String toString(){
